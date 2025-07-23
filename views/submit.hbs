@@ -1,0 +1,8 @@
+<h1>Submit Feedback</h1>
+{{#if error}}<p style="color:red">{{error}}</p>{{/if}}
+<form action="/submit" method="POST">
+  <input type="text" name="name" placeholder="Your Name" value="{{name}}" required>
+  <textarea name="message" placeholder="Your Feedback" required>{{message}}</textarea>
+  <button type="submit">Submit</button>
+</form>
+<a href="/">View All Feedback</a>

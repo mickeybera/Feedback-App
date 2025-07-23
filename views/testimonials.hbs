@@ -1,0 +1,7 @@
+<h1>All Feedback</h1>
+<ul>
+  {{#each feedbacks}}
+    <li><strong>{{this.name}}</strong>: {{this.message}} <em>({{this.date}})</em></li>
+  {{/each}}
+</ul>
+<a href="/submit">Submit New Feedback</a>
